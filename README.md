@@ -138,7 +138,8 @@ Ahora vamos a escalar nuestra aplicación, donde antes decía replicas : 2 ahor
 
 
 Vemos el [localhost:4000](http://localhost:4000) y el cambio de hostname:
-![Captura5](https://user-images.githubusercontent.com/50055674/162174237-a5e9537b-0c42-461c-b400-6e9cb2ed4293.png)
+
+![Captura5](https://user-images.githubusercontent.com/50055674/162174237-a5e9537b-0c42-461c-b400-6e9cb2ed4293.png)>
 
 ![Captura6](https://user-images.githubusercontent.com/50055674/162174325-de5226e3-ec9c-4f55-b163-abcd7267e9ce.png)
 
