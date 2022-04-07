@@ -121,11 +121,24 @@ Nuestras aplicaciones corriendo:
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb84937f-8512-407c-9fdb-c7f19069c01b/Untitled.png)
 
-Con 5:
+Ya puedes ir a tu navegador e ingresar por el http://localhost:4000 y si
+ refrescas varias veces veras que el Hostname cambia, claro están 
+corriendo en contenedores diferentes, que tienen una misma salida, por 
+cierto si estas corriendo esto en windows posiblemente la salida no sea 
+localhost para ti, sino la ip de la maquina virtual que tenga linux 
+instalado.
 
+Ahora vamos a escalar nuestra aplicación, donde  antes decía replicas : 2 ahora dile que son 5:
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/321b2cde-a808-460c-a0cc-857b09bb638e/Untitled.png)
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5713ae40-add7-4771-983e-e6da30222a18/Untitled.png)
+
+Vemos el [localhost:400](http://localhost:400)0 y el cambio de hostname:
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdcab87f-5415-4a5a-92f6-b20a2f6acd15/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/569ebd1c-f543-4a43-93e0-768039cf8cbf/Untitled.png)
+
 
 Perfecto a esto se le llama escalar una aplicación y es uno de los conceptos fundamentales a tener en cuenta, bien hasta aquí hoy aprendimos a crear un cluster, desplegamos nuestro propio balanceador de carga, escalamos una aplicación, ahora limpiemos este desastre:
 
