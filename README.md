@@ -119,7 +119,7 @@ docker container ls -la
 
 Nuestras aplicaciones corriendo:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb84937f-8512-407c-9fdb-c7f19069c01b/Untitled.png)
+(https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb84937f-8512-407c-9fdb-c7f19069c01b/Untitled.png)
 
 Ya puedes ir a tu navegador e ingresar por el http://localhost:4000 y si
  refrescas varias veces veras que el Hostname cambia, claro están 
@@ -128,7 +128,7 @@ cierto si estas corriendo esto en windows posiblemente la salida no sea
 localhost para ti, sino la ip de la maquina virtual que tenga linux 
 instalado.
 
-Ahora vamos a escalar nuestra aplicación, donde  antes decía replicas : 2 ahora dile que son 5:
+Ahora vamos a escalar nuestra aplicación, donde antes decía replicas : 2 ahora dile que son 5:
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/321b2cde-a808-460c-a0cc-857b09bb638e/Untitled.png)
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5713ae40-add7-4771-983e-e6da30222a18/Untitled.png)
