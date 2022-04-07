@@ -109,7 +109,9 @@ docker service ls
 
 Deberían ver en pantalla algo similar a esto:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4aa1878b-b33d-4d6b-bcf2-1249990e959f/Untitled.png)
+
+<img width="677" alt="Captura" src="https://user-images.githubusercontent.com/50055674/162172682-b0d9979c-e4f1-418e-863e-c165b074653d.png">
+
 
 Bien ese es nuestro servicio corriendo, con nuestro balanceador de carga en local, ahora nosotros declaramos en nuestro archivo que queríamos 2 contenedores(aplicaciones) corriendo en simultáneo, para verlo usa en linea de comandos:
 
@@ -119,25 +121,26 @@ docker container ls -la
 
 Nuestras aplicaciones corriendo:
 
-(https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb84937f-8512-407c-9fdb-c7f19069c01b/Untitled.png)
 
-Ya puedes ir a tu navegador e ingresar por el http://localhost:4000 y si
- refrescas varias veces veras que el Hostname cambia, claro están 
-corriendo en contenedores diferentes, que tienen una misma salida, por 
-cierto si estas corriendo esto en windows posiblemente la salida no sea 
-localhost para ti, sino la ip de la maquina virtual que tenga linux 
-instalado.
+<img width="1004" alt="Captura2" src="https://user-images.githubusercontent.com/50055674/162173165-f8c79ec0-73a3-4bc3-9c3b-14c926af6c8b.png">
+
+
+Puedes ir a tu navegador e ingresar http://localhost:4000 y si refrescas varias veces veras que el Hostname cambia, claro están 
+corriendo en contenedores diferentes, que tienen una misma salida. (Si estas corriendo esto en windows posiblemente la salida no sea 
+localhost para ti, sino la ip de la maquina virtual que tenga linux instalado).
+
 
 Ahora vamos a escalar nuestra aplicación, donde antes decía replicas : 2 ahora dile que son 5:
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/321b2cde-a808-460c-a0cc-857b09bb638e/Untitled.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5713ae40-add7-4771-983e-e6da30222a18/Untitled.png)
+<img width="702" alt="Captura3" src="https://user-images.githubusercontent.com/50055674/162173484-97ef8220-8b40-4668-bdf9-632c005ae452.png">
 
-Vemos el [localhost:400](http://localhost:400)0 y el cambio de hostname:
+<img width="1042" alt="Captura4" src="https://user-images.githubusercontent.com/50055674/162173693-2c3f8641-16c2-49a4-b483-70d5cbac42da.png">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdcab87f-5415-4a5a-92f6-b20a2f6acd15/Untitled.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/569ebd1c-f543-4a43-93e0-768039cf8cbf/Untitled.png)
+Vemos el [localhost:4000](http://localhost:4000) y el cambio de hostname:
+![Captura5](https://user-images.githubusercontent.com/50055674/162174237-a5e9537b-0c42-461c-b400-6e9cb2ed4293.png)
+
+![Captura6](https://user-images.githubusercontent.com/50055674/162174325-de5226e3-ec9c-4f55-b163-abcd7267e9ce.png)
 
 
 Perfecto a esto se le llama escalar una aplicación y es uno de los conceptos fundamentales a tener en cuenta, bien hasta aquí hoy aprendimos a crear un cluster, desplegamos nuestro propio balanceador de carga, escalamos una aplicación, ahora limpiemos este desastre:
